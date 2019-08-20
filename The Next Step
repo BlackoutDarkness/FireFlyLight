@@ -1,1 +1,102 @@
-alexis
+your
+person
+yoyo
+exclude
+dump
+disapprove
+muster
+night
+manage
+in
+there
+your
+yesterday
+relax
+reason
+to
+life
+ever
+sure
+outstanding
+icon
+niche
+our
+intake
+moment
+good
+save
+astronomical
+group
+entity
+autonomy
+fish
+leather
+of
+revenge
+this
+everyone
+data
+the
+nothing
+of
+distrust
+new
+under
+number
+for
+offset
+how
+a
+lackluster
+something
+understand
+see
+now
+everything
+together
+member
+intervene
+destroy
+note
+yank
+people
+you
+appointed
+
+import subprocess
+import time
+file_a = open("can you read me.txt", "r")
+'''
+def run(command):
+	process = subprocess.Popen(command, stdout=subprocess.PIPE, shell=True)
+	while True:
+		line = process.stdout.readline().rstrip()
+		if not line:
+			print("not line")
+			break
+		yield line
+'''
+read_a = file_a.read()
+import datetime
+list_a = read_a.split("\n")
+prevhour = 123456
+now = datetime.datetime.now()
+print(list_a)
+ctr = 0;
+while ctr < 32:
+	string_a = list_a[ctr]
+	list_a[ctr] = list_a[63-ctr]
+	list_a[63-ctr] = string_a
+	ctr = ctr + 2
+now = datetime.datetime.now()
+a=str(now.month)
+b=str(now.day)
+c=str(now.hour)
+file_b = open("can you read it now.txt", "w")
+for x in list_a:
+	file_b.write(x.capitalize())
+	file_b.write("\n")
+file_a.close()
+prevhour = now.hour	
+file_b.close()
+print(a)
