@@ -63,7 +63,8 @@ people
 you
 appointed
 
-import subprocess
+#any " " under this line is not included to be looked back
+import subprocess 
 import time
 file_a = open("can you read me.txt", "r")
 '''
